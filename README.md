@@ -43,6 +43,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 ![ScreenRecording2026-04-01at1 43 09AM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/98af95fa-8e88-412d-a02d-f519ad7967d2)
 
+![ScreenRecording2026-04-01at2 14 19AM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/6b94abac-9e91-481e-9eae-b29be92f60c9)
 
 GIF created with **Ezgif**
 
