@@ -12,8 +12,6 @@ The following **required** functionality is completed:
 
 - [x] **The web app uses React to display data from the API.**
 - [x] **The web app is connected to a PostgreSQL database, with an appropriately structured `CustomItem` table.**
-  - [ ]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
-  - [ ]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command `SELECT * FROM tablename;` to display your table contents.**
 - [x] **Users can view multiple features of the `CustomItem` they can customize.**
 - [x] **Each customizable feature has multiple options to choose from.**
 - [x] **On selecting each option, the displayed visual icon for the `CustomItem` updates to match the option the user chose.**
@@ -41,8 +39,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
+![ScreenRecording2026-04-01at1 43 09AM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/98af95fa-8e88-412d-a02d-f519ad7967d2)
 
-<img src="./demo.gif" title="Video Walkthrough" width="700" alt="Video Walkthrough" />
 
 GIF created with **Ezgif**
 
