@@ -1,61 +1,61 @@
-# DIY Delight - BoltBucket Studio
+# WEB103 Project 4 - BoltBucket Studio
 
-A polished full-stack React + Express + PostgreSQL custom item builder inspired by the BoltBucket exemplar.
+Submitted by: **Noor AlAzzawi**
 
-## Features
+About this web app: **BoltBucket Studio is a full-stack custom device configurator built with React, Node.js, Express, and PostgreSQL. Users can customize a device by choosing different options like shell, core, power profile, storage, and finish, see the visual preview and total price update instantly, and save, edit, view, and delete builds from the database.**
 
-- React frontend with live customizer preview
-- PostgreSQL database with a `custom_items` table
-- Full CRUD: create, read, update, delete
-- Dynamic price calculation
-- Visual interface updates when options change
-- Invalid combinations blocked with a clear error message
-- Home page list of submitted custom items
-- Detail page with edit and delete actions
+Time spent: **20+** hours
 
-## Stack
+## Required Features
 
-- Frontend: React, React Router, Vite, CSS
-- Backend: Node.js, Express
-- Database: PostgreSQL on Render
+The following **required** functionality is completed:
 
-## Run the backend
+- [x] **The web app uses React to display data from the API.**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured `CustomItem` table.**
+  - [ ]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [ ]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command `SELECT * FROM tablename;` to display your table contents.**
+- [x] **Users can view multiple features of the `CustomItem` they can customize.**
+- [x] **Each customizable feature has multiple options to choose from.**
+- [x] **On selecting each option, the displayed visual icon for the `CustomItem` updates to match the option the user chose.**
+- [x] **The price of the `CustomItem` changes dynamically as different options are selected.**
+- [x] **The visual interface changes in response to at least one customizable feature.**
+- [x] **The user can submit their choices to save the item to the list of created `CustomItem`s.**
+- [x] **If a user submits a feature combo that is impossible, they should receive an appropriate error message and the item should not be saved to the database.**
+- [x] **Users can view a list of all submitted `CustomItem`s.**
+- [x] **Users can edit a submitted `CustomItem` from the list view of submitted `CustomItem`s.**
+- [x] **Users can delete a submitted `CustomItem` from the list view of submitted `CustomItem`s.**
+- [x] **Users can update or delete `CustomItem`s that have been created from the detail page.**
 
-```bash
-cd server
-npm install
-cp .env.example .env
-npm run reset-db
-npm run dev
-```
+The following **optional** features are implemented:
 
-## Run the frontend
+- [ ] Selecting particular options prevents incompatible options from being selected even before form submission
 
-```bash
-cd client
-npm install
-npm run dev
-```
+The following **additional** features are implemented:
 
-Create a `.env` file in `client/` if needed:
+- [x] Modern glassmorphism-style UI with responsive layout
+- [x] Live build preview card that updates as options are selected
+- [x] Seeded PostgreSQL database with sample builds for testing
+- [x] Detailed build page with edit and delete actions
+- [x] Hero section and stats cards on the homepage
 
-```bash
-VITE_API_URL=http://localhost:3001/api
-```
+## Video Walkthrough
 
-## Required table
+Here's a walkthrough of implemented required features:
 
-```sql
-CREATE TABLE IF NOT EXISTS custom_items (
-  id SERIAL PRIMARY KEY,
-  name TEXT NOT NULL,
-  shell TEXT NOT NULL,
-  core TEXT NOT NULL,
-  power TEXT NOT NULL,
-  storage TEXT NOT NULL,
-  finish TEXT NOT NULL,
-  price INTEGER NOT NULL,
-  validation_error TEXT DEFAULT '',
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
+<img src="./demo.gif" title="Video Walkthrough" width="700" alt="Video Walkthrough" />
+
+GIF created with **Ezgif**
+
+## Notes
+
+One challenge was connecting the React frontend, Express backend, and PostgreSQL database while keeping the file structure and route imports consistent. Another challenge was validating impossible build combinations before saving data, while still keeping the UI responsive and easy to use. I also spent time improving the visual design so the project would feel polished and portfolio-ready instead of looking like a basic CRUD assignment.
+
+## License
+
+Copyright 2026 Noor AlAzzawi
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+> http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
