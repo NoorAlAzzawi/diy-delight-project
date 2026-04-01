@@ -45,6 +45,8 @@ Here's a walkthrough of implemented required features:
 
 ![ScreenRecording2026-04-01at2 14 19AM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/6b94abac-9e91-481e-9eae-b29be92f60c9)
 
+
+
 GIF created with **Ezgif**
 
 ## Notes
